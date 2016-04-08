@@ -34,12 +34,12 @@ package %w(
   libreadline-dev
   libsqlite3-dev
   libssl-dev
-  llvm
   make
   tk-dev
   wget
   zlib1g-dev
 )
+#  llvm
 
 git '/opt/pyenv' do
   repository 'https://github.com/yyuu/pyenv.git'
