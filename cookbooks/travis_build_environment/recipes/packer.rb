@@ -20,10 +20,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-ark 'packer' do
-  url node['travis_build_environment']['packer_url']
-  version node['travis_build_environment']['packer_version']
-  checksum node['travis_build_environment']['packer_checksum']
-  strip_components 0
-  has_binaries node['travis_build_environment']['packer_binaries']
-end
+#ark 'packer' do
+#  url node['travis_build_environment']['packer_url']
+#  version node['travis_build_environment']['packer_version']
+#  checksum node['travis_build_environment']['packer_checksum']
+#  strip_components 0
+#  has_binaries node['travis_build_environment']['packer_binaries']
+#end
