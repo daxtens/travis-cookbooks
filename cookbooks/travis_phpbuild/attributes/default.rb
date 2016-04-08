@@ -1,6 +1,6 @@
-default['travis_phpbuild']['git']['repository'] = 'git://github.com/php-build/php-build.git'
+default['travis_phpbuild']['git']['repository'] = 'https://github.com/php-build/php-build.git'
 default['travis_phpbuild']['git']['revision'] = '0df4c0c044669e13ae3bd8cee7a49ce33b49dc1f'
-default['travis_phpbuild']['phpunit_plugin']['git']['repository'] = 'git://github.com/php-build/phpunit-plugin.git'
+default['travis_phpbuild']['phpunit_plugin']['git']['repository'] = 'https://github.com/php-build/phpunit-plugin.git'
 default['travis_phpbuild']['phpunit_plugin']['git']['revision'] = 'f3edabe4498e4f2fbebdfa63d3ed7272eb129ba2'
 default['travis_phpbuild']['custom']['php_ini']['memory_limit'] = '1G'
 default['travis_phpbuild']['custom']['php_ini']['timezone'] = 'UTC'
