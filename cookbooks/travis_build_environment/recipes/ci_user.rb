@@ -223,7 +223,7 @@ node['travis_build_environment']['otp_releases'].each do |rel|
 end
 
 include_recipe 'travis_build_environment::rebar'
-include_recipe 'travis_build_environment::kiex'
+#include_recipe 'travis_build_environment::kiex'
 
 node['travis_build_environment']['elixir_versions'].each do |elixir|
   local_archive = "#{Chef::Config[:file_cache_path]}/v#{elixir}.zip"
@@ -259,12 +259,12 @@ node['travis_build_environment']['elixir_versions'].each do |elixir|
   end
 end
 
-bash "set default elixir version to #{node['travis_build_environment']['default_elixir_version']}" do
-  user node['travis_build_environment']['user']
-  group node['travis_build_environment']['group']
-  code "#{node['travis_build_environment']['home']}/.kiex/bin/kiex default #{node['travis_build_environment']['default_elixir_version']}"
-  environment(
-    'HOME' => node['travis_build_environment']['home'],
-    'USER' => node['travis_build_environment']['user']
-  )
-end
+#bash "set default elixir version to #{node['travis_build_environment']['default_elixir_version']}" do
+#  user node['travis_build_environment']['user']
+#  group node['travis_build_environment']['group']
+#  code "#{node['travis_build_environment']['home']}/.kiex/bin/kiex default #{node['travis_build_environment']['default_elixir_version']}"
+#  environment(
+#    'HOME' => node['travis_build_environment']['home'],
+#    'USER' => node['travis_build_environment']['user']
+#  )
+#end
