@@ -12,11 +12,11 @@ default['travis_php']['multi']['prerequisite_recipes'] = %w(
 )
 default['travis_php']['multi']['postrequisite_recipes'] = %w(
   travis_php::extensions
-  travis_php::hhvm
-  travis_php::hhvm-nightly
   travis_php::phpunit
   travis_php::composer
 )
+#travis_php::hhvm
+#travis_php::hhvm-nightly
 multi_versions = %w(
   5.4.45
   5.5.30
