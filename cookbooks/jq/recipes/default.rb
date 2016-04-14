@@ -24,12 +24,4 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
 
-arch = node['kernel']['machine'] =~ /x86_64/ ? '64' : '32'
-
-remote_file node['jq']['install_dest'] do
-  source "https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux#{arch}"
-  action :create_if_missing
-  mode 0755
-  owner node['jq']['owner']
-  group node['jq']['group']
-end
+package 'jq'
